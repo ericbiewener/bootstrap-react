@@ -1,0 +1,22 @@
+{
+  "name": "omni",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "react": "16.8.6",
+    "react-dom": "16.8.6"
+  },
+  "devDependencies": {
+    "@babel/core": "7.4.5",
+    "@babel/preset-env": "7.4.5",
+    "@babel/preset-react": "7.0.0",
+    "@babel/preset-typescript": "7.3.3",
+    "@types/node": "12.0.7",
+    "babel-loader": "8.0.6",
+    "cli": "1.0.1",
+    "eslint": "5.16.0",
+    "eslint-config-ericbiewener": "3.6.1",
+    "webpack": "4.33.0"
+  }
+}
