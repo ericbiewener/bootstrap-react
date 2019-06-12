@@ -1,4 +1,4 @@
-import * as React from 'React'
+import * as React from 'react'
 import ReactDOM from 'react-dom'
 
 const App = () => <div>App!</div>

@@ -13,7 +13,6 @@ const config: Configuration = {
   output: {
     path: path.join(__dirname, 'dist'),
     filename: 'app.js',
-    libraryTarget: 'commonjs2',
     devtoolModuleFilenameTemplate: '../[resource-path]',
   },
   devtool: 'source-map',
@@ -31,9 +30,22 @@ const config: Configuration = {
           },
         ],
       },
+      {
+        test: /\.html$/,
+        use: [
+          {
+            loader: 'html-loader',
+          },
+        ],
+      },
     ],
   },
-  plugins: [new HtmlWebpackPlugin()],
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: path.join(SRC, 'index.html'),
+      filename: './index.html',
+    }),
+  ],
 }
 
 module.exports = config
