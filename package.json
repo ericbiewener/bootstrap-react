@@ -2,7 +2,8 @@
   "name": "omni",
   "version": "1.0.0",
   "scripts": {
-    "start": ""
+    "start": "",
+    "prettier": "prettier-eslint --write \"**/*.{ts,tsx,js}\""
   },
   "dependencies": {
     "react": "16.8.6",
@@ -15,11 +16,29 @@
     "@babel/preset-typescript": "7.3.3",
     "@types/node": "12.0.7",
     "@types/react": "16.8.19",
+    "@types/react-dom": "16.8.4",
     "babel-loader": "8.0.6",
     "cli": "1.0.1",
     "eslint": "5.16.0",
-    "eslint-config-ericbiewener": "3.6.1",
-    "webpack": "4.33.0"
+    "eslint-config-ericbiewener-typescript": "3.6.1",
+    "html-loader": "0.5.5",
+    "html-webpack-plugin": "3.2.0",
+    "husky": "2.4.1",
+    "lint-staged": "8.2.0",
+    "prettier-eslint-cli": "4.7.1",
+    "webpack": "4.33.0",
+    "webpack-dev-server": "3.7.1"
+  },
+  "lint-staged": {
+    "**/*.{ts,tsx,js}": [
+      "prettier-eslint --prettier-last --write",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "main": "index.js",
   "license": "MIT"

@@ -1,19 +1,20 @@
-const path = require('path')
-import { Configuration } from 'webpack'
+const path = require("path");
+import { Configuration } from "webpack";
+import HtmlWebPackPlugin from "html-webpack-plugin";
 
 const config: Configuration = {
-  mode: process.env.NODE_ENV as 'development' | 'production',
-  target: 'node',
-  entry: './src/main.ts',
+  mode: process.env.NODE_ENV as "development" | "production",
+  target: "node",
+  entry: "./src/main.ts",
   output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: 'extension.js',
-    libraryTarget: 'commonjs2',
-    devtoolModuleFilenameTemplate: '../[resource-path]',
+    path: path.resolve(__dirname, "dist"),
+    filename: "app.js",
+    libraryTarget: "commonjs2",
+    devtoolModuleFilenameTemplate: "../[resource-path]"
   },
-  devtool: 'source-map',
+  devtool: "source-map",
   resolve: {
-    extensions: ['.ts', '.js'],
+    extensions: [".ts", ".tsx", ".js"]
   },
   module: {
     rules: [
@@ -22,9 +23,9 @@ const config: Configuration = {
         exclude: /node_modules/,
         use: [
           {
-            loader: 'babel-loader',
-          },
-        ],
+            loader: "babel-loader"
+          }
+        ]
       },
       {
         test: /\.html$/,
@@ -41,7 +42,7 @@ const config: Configuration = {
         filename: "./index.html"
       })
     ]
-  },
-}
+  }
+};
 
-module.exports = config
+module.exports = config;
