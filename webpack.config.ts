@@ -1,48 +1,39 @@
-const path = require("path");
-import { Configuration } from "webpack";
-import HtmlWebPackPlugin from "html-webpack-plugin";
+// For some reason, the following import must be done with `import` syntax, while all the rest must
+// be requires.
+import { Configuration } from 'webpack'
+const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+
+const SRC = path.join(__dirname, 'src')
 
 const config: Configuration = {
-  mode: process.env.NODE_ENV as "development" | "production",
-  target: "node",
-  entry: "./src/main.ts",
+  mode: process.env.NODE_ENV as 'development' | 'production',
+  target: 'node',
+  entry: path.join(SRC, 'main.tsx'),
   output: {
-    path: path.resolve(__dirname, "dist"),
-    filename: "app.js",
-    libraryTarget: "commonjs2",
-    devtoolModuleFilenameTemplate: "../[resource-path]"
+    path: path.join(__dirname, 'dist'),
+    filename: 'app.js',
+    libraryTarget: 'commonjs2',
+    devtoolModuleFilenameTemplate: '../[resource-path]',
   },
-  devtool: "source-map",
+  devtool: 'source-map',
   resolve: {
-    extensions: [".ts", ".tsx", ".js"]
+    extensions: ['.ts', '.tsx', '.js'],
   },
   module: {
     rules: [
       {
-        test: /\.ts$/,
+        test: /\.tsx?$/,
         exclude: /node_modules/,
         use: [
           {
-            loader: "babel-loader"
-          }
-        ]
+            loader: 'babel-loader',
+          },
+        ],
       },
-      {
-        test: /\.html$/,
-        use: [
-          {
-            loader: "html-loader"
-          }
-        ]
-      }
     ],
-    plugins: [
-      new HtmlWebPackPlugin({
-        template: "./src/index.html",
-        filename: "./index.html"
-      })
-    ]
-  }
-};
+  },
+  plugins: [new HtmlWebpackPlugin()],
+}
 
-module.exports = config;
+module.exports = config
