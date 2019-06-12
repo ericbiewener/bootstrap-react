@@ -26,7 +26,21 @@ const config: Configuration = {
           },
         ],
       },
+      {
+        test: /\.html$/,
+        use: [
+          {
+            loader: "html-loader"
+          }
+        ]
+      }
     ],
+    plugins: [
+      new HtmlWebPackPlugin({
+        template: "./src/index.html",
+        filename: "./index.html"
+      })
+    ]
   },
 }
 
