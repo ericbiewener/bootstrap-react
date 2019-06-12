@@ -1,8 +1,9 @@
 {
   "name": "omni",
   "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
+  "scripts": {
+    "start": ""
+  },
   "dependencies": {
     "react": "16.8.6",
     "react-dom": "16.8.6"
@@ -13,10 +14,13 @@
     "@babel/preset-react": "7.0.0",
     "@babel/preset-typescript": "7.3.3",
     "@types/node": "12.0.7",
+    "@types/react": "16.8.19",
     "babel-loader": "8.0.6",
     "cli": "1.0.1",
     "eslint": "5.16.0",
     "eslint-config-ericbiewener": "3.6.1",
     "webpack": "4.33.0"
-  }
+  },
+  "main": "index.js",
+  "license": "MIT"
 }
