@@ -2,12 +2,14 @@
   "name": "omni",
   "version": "1.0.0",
   "scripts": {
-    "start": "webpack-dev-server --open --mode development",
+    "start": "webpack-dev-server",
+    "hot": "webpack-dev-server --hot",
     "prettier": "prettier-eslint --write \"**/*.{ts,tsx,js}\""
   },
   "dependencies": {
     "react": "16.8.6",
-    "react-dom": "16.8.6"
+    "react-dom": "16.8.6",
+    "react-hot-loader": "4.12.6"
   },
   "devDependencies": {
     "@babel/core": "7.5.4",
