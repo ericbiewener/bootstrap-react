@@ -2,8 +2,7 @@
   "name": "omni",
   "version": "1.0.0",
   "scripts": {
-    "start": "webpack-dev-server",
-    "hot": "webpack-dev-server --hot",
+    "start": "webpack-dev-server --hot --open",
     "prettier": "prettier-eslint --write \"**/*.{ts,tsx,js}\""
   },
   "dependencies": {
