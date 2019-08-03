@@ -8,7 +8,7 @@ const SRC = path.join(__dirname, 'src')
 
 const config: Configuration = {
   mode: process.env.NODE_ENV as 'development' | 'production',
-  target: 'node',
+  target: 'web',
   entry: path.join(SRC, 'main.tsx'),
   output: {
     path: path.join(__dirname, 'dist'),
