@@ -1,9 +1,9 @@
 {
-  "name": "omni",
+  "name": "bootstrap-react",
   "version": "1.0.0",
   "scripts": {
     "start": "webpack-dev-server --hot --open",
-    "prettier": "prettier-eslint --write \"**/*.{ts,tsx,js,json,yml}\""
+    "prettier": "prettier --write \"**/*.{ts,tsx,js,json,yml}\""
   },
   "dependencies": {
     "react": "16.11.0",
