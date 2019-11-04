@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "start": "webpack-dev-server --hot --open",
+    "start:public": "yarn start --host 0.0.0.0",
+    "sp": "yarn start:public",
     "prettier": "prettier --write \"**/*.{ts,tsx,js,json,yml}\""
   },
   "dependencies": {
