@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 // For some reason, the following import must be done with `import` syntax, while all the rest must
 // be requires.
 import { Configuration } from 'webpack'
@@ -24,19 +25,11 @@ const config: Configuration = {
       {
         test: /\.tsx?$/,
         exclude: /node_modules/,
-        use: [
-          {
-            loader: 'babel-loader',
-          },
-        ],
+        use: 'babel-loader',
       },
       {
         test: /\.html$/,
-        use: [
-          {
-            loader: 'html-loader',
-          },
-        ],
+        use: 'html-loader',
       },
     ],
   },

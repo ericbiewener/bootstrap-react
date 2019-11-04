@@ -2052,7 +2052,7 @@ core-js-compat@^3.1.1:
     browserslist "^4.7.2"
     semver "^6.3.0"
 
-core-js@^3.1.4:
+core-js@3.3.6, core-js@^3.1.4:
   version "3.3.6"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.3.6.tgz#6ad1650323c441f45379e176ed175c0d021eac92"
   integrity sha512-u4oM8SHwmDuh5mWZdDg9UwNVq5s1uqq6ZDLLIs07VY+VJU91i3h4f3K/pgFvtUQPGdeStrZ+odKyfyt4EnKHfA==
@@ -2598,26 +2598,27 @@ escape-string-regexp@^1.0.2, escape-string-regexp@^1.0.5:
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz#1b61c0562190a8dff6ae3bb2cf0200ca130b86d4"
   integrity sha1-G2HAViGQqN/2rjuyzwIAyhMLhtQ=
 
-eslint-config-ericbiewener-typescript@5.1.0:
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-ericbiewener-typescript/-/eslint-config-ericbiewener-typescript-5.1.0.tgz#ec43b2b429b28d87c7b33f81c54cb88d0a10e4d9"
-  integrity sha512-HdtpDiX4lkF/kyN3WebGUqQSYNF0Itepd+MQ0063cuiTQwf47R8J1XlFMzm4X5uK+PqRCDSU7+X3t8/X6zWCjA==
+eslint-config-ericbiewener-typescript@5.3.2:
+  version "5.3.2"
+  resolved "https://registry.yarnpkg.com/eslint-config-ericbiewener-typescript/-/eslint-config-ericbiewener-typescript-5.3.2.tgz#3bdd01c5dcb23d9070527d60465331e7351f8e0d"
+  integrity sha512-A0x57Xa5MIFv4/Xob27i37qVqa5030BW7wWf98SpTyXxbRbIfcPBT75LEkH3vD8TQ4cj7fPrQ6CUW8qzT6W1lg==
   dependencies:
     "@typescript-eslint/eslint-plugin" "1.13.0"
     "@typescript-eslint/parser" "1.13.0"
     babel-eslint "11.0.0-beta.0"
     base "*"
-    eslint-config-ericbiewener "5.1.0"
+    eslint-config-ericbiewener "^5.0.0"
     typescript "3.5.3"
 
-eslint-config-ericbiewener@5.1.0:
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-ericbiewener/-/eslint-config-ericbiewener-5.1.0.tgz#40db55b48b8cfdf4c505fa1cff56772cc04fef01"
-  integrity sha512-8+PsenUJ5FQMezgNcYUKH3rgoUJ+BQ9k5a/RknlxXU9atbts1iEB5LT4Pw99Ahiusk3moJBjaYbeCsGfoAsF/Q==
+eslint-config-ericbiewener@^5.0.0:
+  version "5.3.1"
+  resolved "https://registry.yarnpkg.com/eslint-config-ericbiewener/-/eslint-config-ericbiewener-5.3.1.tgz#ee55c8f04ba7a04b83092d96f714fe4a85171392"
+  integrity sha512-kNFWkNdQpb/MYQkj1r/KTahZ1ynZ6pBDJr8sjagcmzRf9cudvSRqc3racwKW0OoMx5H3OtxOMriAvcVq+yRGCA==
   dependencies:
     babel-eslint "11.0.0-beta.0"
     eslint-config-prettier "6.0.0"
     eslint-plugin-react "7.14.3"
+    eslint-plugin-react-hooks "^2.2.0"
 
 eslint-config-prettier@6.0.0:
   version "6.0.0"
@@ -2625,6 +2626,11 @@ eslint-config-prettier@6.0.0:
   integrity sha512-vDrcCFE3+2ixNT5H83g28bO/uYAwibJxerXPj+E7op4qzBCsAV36QfvdAyVOoNxKAH2Os/e01T/2x++V0LPukA==
   dependencies:
     get-stdin "^6.0.0"
+
+eslint-plugin-react-hooks@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-2.2.0.tgz#078264e9e388da6929ace09d6abe92c85963aff4"
+  integrity sha512-jSlnBjV2cmyIeL555H/FbvuSbQ1AtpHjLMHuPrQnt1eVA6lX8yufdygh7AArI2m8ct7ChHGx2uOaCuxq2MUn6g==
 
 eslint-plugin-react@7.14.3:
   version "7.14.3"
@@ -5741,6 +5747,11 @@ regenerate@^1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/regenerate/-/regenerate-1.4.0.tgz#4a856ec4b56e4077c557589cae85e7a4c8869a11"
   integrity sha512-1G6jJVDWrt0rK99kBjvEtziZNCICAuvIPkSiUFIQxVP06RCVpq3dmDo2oi6ABpYaDYaTRr67BEhL8r1wgEZZKg==
+
+regenerator-runtime@0.13.3:
+  version "0.13.3"
+  resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.13.3.tgz#7cf6a77d8f5c6f60eb73c5fc1955b2ceb01e6bf5"
+  integrity sha512-naKIZz2GQ8JWh///G7L3X6LaQUAMp2lvb1rvwwsURe/VXwD6VMfr+/1NuNw3ag8v2kY1aQ/go5SNn79O9JU7yw==
 
 regenerator-transform@^0.14.0:
   version "0.14.1"
