@@ -1,18 +1,14 @@
 {
-	"compilerOptions": {
-		"module": "esnext",
-		"moduleResolution": "node",
-		"target": "esnext",
-		"outDir": "dist",
-		"sourceMap": true,
-		"strict": true,
-		"allowSyntheticDefaultImports": true,
-		"jsx": "react",
-	},
-	"include": [
-		"src",
-	],
-	"exclude": [
-		"node_modules"
-	]
+  "compilerOptions": {
+    "module": "esnext",
+    "moduleResolution": "node",
+    "target": "esnext",
+    "outDir": "dist",
+    "sourceMap": true,
+    "strict": true,
+    "allowSyntheticDefaultImports": true,
+    "jsx": "react"
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
 }
