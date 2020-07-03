@@ -41,13 +41,11 @@
   },
   "lint-staged": {
     "**/*.{json,yml}": [
-      "prettier --write",
-      "git add"
+      "prettier --write"
     ],
     "**/*.{ts,tsx,gql}": [
       "prettier --write",
-      "eslint --fix",
-      "git add"
+      "eslint --fix"
     ]
   },
   "husky": {
