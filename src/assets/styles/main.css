@@ -1,0 +1,67 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/**
+ * Base Styles
+ */
+
+body {
+  @apply bg-gray-200;
+}
+
+a:hover {
+  @apply underline;
+}
+
+h1 {
+  @apply text-2xl;
+}
+
+label {
+  @apply cursor-pointer;
+}
+
+button:focus {
+  @apply outline-none;
+}
+
+input[type='text'] {
+  @apply w-full;
+  @apply outline-none;
+  @apply border;
+  @apply border-gray-200;
+  @apply px-2;
+  @apply rounded;
+  /* @apply py-1; */
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+
+  &:focus {
+    @apply border-teal-500;
+    @apply bg-gray-50;
+  }
+}
+
+/**
+ * Animations
+ */
+
+@keyframes grow0to1 {
+  from {
+    transform: scale(0);
+    opacity: 1;
+  }
+  to {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+.animate-grow0to1 {
+  animation: grow0to1 2s infinite ease-out;
+}
+
+.animation-delay-n1s {
+  animation-delay: -1s;
+}
