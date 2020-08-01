@@ -8,6 +8,7 @@
     "prettier": "prettier --write \"**/*.{ts,tsx,js,json,yml}\""
   },
   "dependencies": {
+    "classnames": "2.2.6",
     "core-js": "3.6.5",
     "react": "16.13.1",
     "react-dom": "16.13.1",
