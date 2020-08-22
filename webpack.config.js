@@ -17,6 +17,9 @@ const config = {
     devtoolModuleFilenameTemplate: '../[resource-path]',
   },
   devtool: 'source-map',
+  devServer: {
+    historyApiFallback: true,
+  },
   resolve: {
     extensions: ['.ts', '.tsx', '.js'],
   },
