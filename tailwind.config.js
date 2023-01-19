@@ -1,5 +1,4 @@
 module.exports = {
-  important: true, // https://tailwindcss.com/docs/configuration/#important
   variants: {
     backgroundColor: ['hover', 'active', 'even'],
     borderColor: ['hover', 'active'],

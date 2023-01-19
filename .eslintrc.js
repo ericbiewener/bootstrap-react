@@ -1,9 +1,4 @@
 module.exports = {
-  extends: 'ericbiewener-typescript',
-  env: {
-    browser: false,
-    es6: true,
-    node: true,
-    jest: true,
-  },
-}
+  extends: "@ericbiewener/eslint-config-ts",
+  ignorePatterns: ["dist", "node_modules", "*.js", "webpack.config.ts"],
+};
